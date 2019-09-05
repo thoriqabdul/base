@@ -73,6 +73,6 @@
                     {data: 'action', orderable: false, searchable: false}
                 ]
             });
-        });
+        });        
     </script>
 @endsection

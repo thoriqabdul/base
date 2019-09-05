@@ -163,7 +163,7 @@ class BaseController extends Controller
     public function createWithModal() : View
     {
         $data = $this->dataForCreate();
-        return view($this->prefix.'.form', compact('data'));
+        return view($this->prefix.'._form', compact('data'));
     }
 
     /**
@@ -209,7 +209,7 @@ class BaseController extends Controller
     {
         $data = $this->dataForEdit($id);
         $model = $this->getItem($id);
-        return view($this->prefix.'.form', compact('data','model'));
+        return view($this->prefix.'._form', compact('data','model'));
     }
 
     /**

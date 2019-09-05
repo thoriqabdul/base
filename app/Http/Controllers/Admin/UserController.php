@@ -16,4 +16,21 @@ class UserController extends BaseController
         $this->routePath="users.index";
     }
 
+    protected function validateFormBeforeSave(Request $request)
+    {
+        $this->validate($request, [
+            'email' => 'required',
+            'name'=>'required',
+            'password'=>'required'
+        ]);
+    }
+
+    public function validateFormBeforeUpdate(Request $request){
+        $this->validate($request, [
+            'email' => 'required',
+            'name'=>'required',
+            'password'=>'required'
+        ]);
+    }
+
 }

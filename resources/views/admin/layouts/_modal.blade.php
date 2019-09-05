@@ -13,10 +13,10 @@
                     <div class="block-content font-size-sm" id='modal-content'>
                         {{-- @include('admin.user.form') --}}
 
-                        <div class="block-content block-content-full text-right border-top">
-                            <button type="button" class="btn btn-sm btn-light" data-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-sm btn-primary" data-dismiss="modal"><i class="fa fa-check mr-1"></i>Ok</button>
-                        </div>
+                    </div>
+                    <div class="block-content block-content-full text-right border-top">
+                        <button type="button" class="btn btn-sm btn-light" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-sm btn-primary" id="modal-btn-save"><i class="fa fa-check mr-1"></i>Ok</button>
                     </div>
                 </div>
             </div>

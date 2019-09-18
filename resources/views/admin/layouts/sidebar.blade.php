@@ -88,7 +88,7 @@
                 </a>
             </li>
             <li class="nav-main-item">
-                <form method="POST" action="#">
+                <form method="POST" action="{{ route('logout') }}">
                     @csrf
                     <button type="submit" style="background-color: transparent; border-color: transparent;"
                             class="nav-main-link" href="#">
